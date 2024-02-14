@@ -6,7 +6,10 @@
 // }
 
 function continueGame(){
-    const alphabets = getARandomAlphabet();
+    const alphabet = getARandomAlphabet();
+    const letter = document.getElementById('letter');
+    letter.innerText = alphabet;
+    setBgColorById(alphabet);
 }
 
 function play(){
@@ -15,13 +18,3 @@ function play(){
     continueGame();
 }
 
-function getARandomAlphabet(){
-    const alphabetString = 'abcdefghijklmnopqurstuvwxyz';
-    const alphabets = alphabetString.split('');
-
-    const randomNumber = Math.random()*25;
-    const index = Math.round(randomNumber);
-    const alphabet = alphabets;
-    return alphabet;
-
-}
