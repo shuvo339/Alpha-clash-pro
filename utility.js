@@ -22,3 +22,24 @@ function setBgColorById(id){
     const element = document.getElementById(id);
     element.classList.add('bg-orange-400')
 }
+function removeBgColorById(id){
+    const element = document.getElementById(id);
+    element.classList.remove('bg-orange-400')
+}
+
+ function getElementTextById(id){
+    const element = document.getElementById(id);
+    const elementText = element.innerText;
+    return elementText;
+ }
+function getCurrentPointById(id){
+    const element = document.getElementById(id);
+    const elementText = element.innerText;
+    const currentPoint = parseInt(elementText);
+    return currentPoint;
+}
+
+function setUpdatedPointById(id, updatedPoint){
+    const element = document.getElementById(id);
+    element.innerText = updatedPoint;
+}
