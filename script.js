@@ -5,6 +5,8 @@
 //     playgroundScetion.classList.remove('hidden');
 // }
 
+const audio = new Audio();
+
 function continueGame(){
     const alphabet = getARandomAlphabet();
     const currentAlphabet = document.getElementById('current-alphabet');
